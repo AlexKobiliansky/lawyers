@@ -83,3 +83,36 @@ ul
   color: #fff
   a
     color: #fff
+
+.bg-text
+  font-family: "Bitter", sans-serif
+  font-weight: 700
+  color: $accent-yellow
+  background: url('../img/bg-text.jpg') no-repeat
+  background-size: cover
+  background-position: center center
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.btn
+  display: inline-block
+  line-height: 1
+  white-space: nowrap
+  text-align: center
+  cursor: pointer
+  border: none
+  box-shadow: none
+  +mt(.3s)
+  text-transform: uppercase
+  font-weight: 900
+  +ls
+  padding: 24px 28px
+
+.btn-bg
+  color: $text!important
+  background-image: url('../img/bg-text.jpg')
+  +bg-cover
+  &:hover
+    filter: brightness(1.2)
+
+

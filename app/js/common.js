@@ -76,6 +76,38 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+
+    $('.intro-slider').on('initialize.owl.carousel', function (e) {
+        var currentItem = (e.item.index + 1) - e.relatedTarget._clones.length / 2;
+        var $slides = $(this).find('.intro-slide');
+        var $totalSlides = $slides.length;
+
+
+        $('#intro-total').text(romanize($totalSlides))
+        $('#intro-current').text(romanize(currentItem));
+    });
+
+    var $introSlider = $('.intro-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        navText: ['', ''],
+        items: 1,
+        margin: 15,
+        dots: false,
+        animateOut: 'fadeOut',
+        // animateIn: 'fadeIn',
+        mouseDrag: false,
+        touchDrag: false,
+        // autoplay: true,
+    });
+
+
+
+    $introSlider.on('changed.owl.carousel', function (e) {
+        var currentItem = (e.item.index + 1) - e.relatedTarget._clones.length / 2;
+        $('#intro-current').text(romanize(currentItem));
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -89,4 +121,21 @@ $(document).ready(function(){
         });
         return false;
     });
+
+
+    function romanize (num) {
+        if (isNaN(num))
+            return NaN;
+        var digits = String(+num).split(""),
+            key = ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
+                "","X","XX","XXX","XL","L","LX","LXX","LXXX","XC",
+                "","I","II","III","IV","V","VI","VII","VIII","IX"],
+            roman = "",
+            i = 3;
+        while (i--)
+            roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+        return Array(+digits.join("") + 1).join("M") + roman;
+    }
+
+    console.log(romanize(6))
 });
