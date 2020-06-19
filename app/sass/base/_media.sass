@@ -2,6 +2,16 @@
 
 
 /*==========  Desktop First  ==========*/
+
+@media (max-width: 1800px)
+  .service-item.individual
+    right: 0
+
+  .service-item.entity
+    left: 0
+
+
+
 @media (max-width: 1700px)
 
   .intro-slide
@@ -16,8 +26,9 @@
 
 @media (max-width: 1500px)
 
-  .small-container
-    padding: 0
+  .large-container
+    .small-container
+      padding: 0
 
   #intro-nums
     left: 70px
@@ -34,6 +45,33 @@
     padding: 30px 0
 
 @media (max-width: 1400px)
+
+  .service-item
+    width: 1200px
+    margin-left: auto
+    margin-right: auto
+    &-num
+      height: 400px
+    &-square
+      width: 350px
+      height: 500px
+
+  .service-item.individual
+    h2
+      padding-right: 30px
+    .service-item-img
+      width: 650px
+      left: -150px
+    .service-item-square
+      bottom: 175px
+
+  .service-item.entity
+    h2
+      padding-left: 30px
+    .service-item-img
+      width: 650px
+      right: -200px
+
 
   .intro-slider
     &:before
@@ -75,6 +113,37 @@
       font-size: 18px
 
 @media (max-width: 1300px)
+
+  .service-item
+    width: 1000px
+    &-num
+      display: none
+    h2
+      font-size: 32px
+    &-square
+      width: 300px
+      height: 400px
+
+  .service-item.individual
+    margin-bottom: 150px
+    .service-item-content
+      padding-left: 550px
+    .service-item-img
+      width: 500px
+      left: calc(0px - (50vw - 508px))
+    .service-item-square
+      left: 150px
+
+  .service-item.entity
+    .service-item-content
+      padding-left: 80px
+    .service-item-img
+      width: 500px
+      right: calc(0px - (50vw - 508px))
+    .service-item-square
+      bottom: 100px
+      right: 150px
+
   .main-mnu
     display: none
 
@@ -84,6 +153,38 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-services
+    padding-bottom: 60px
+
+  .service-item
+    width: 960px
+
+  .service-item.individual
+    .service-item-img
+      left: calc(0px - (50vw - 488px))
+    .service-item-square
+      left: 205px
+
+  .service-item.entity
+    .service-item-img
+      right: calc(0px - (50vw - 488px))
+    .service-item-content
+      padding-left: 40px
+
+  .chars-block
+    max-width: 900px
+    left: calc(50% - 450px)
+    width: auto
+    top: -175px
+
+  .char-item
+    padding: 0 20px
+    &-desc
+      font-size: 16px
+
+  .s-services
+    padding-top: 340px
 
   .intro-square
     width: 460px
@@ -110,6 +211,52 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-services
+    padding-top: 70px
+
+  .grey-line
+    display: none
+
+  .service-item
+    width: 100%
+    &-img
+      display: none
+    &-square
+      display: none
+    &-desc
+      width: 50%
+    &-mobimg
+      width: calc(50% - 30px)
+      height: auto
+      display: block
+    &-content
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      font-size: 16px
+      li
+        margin-bottom: 5px
+      ul
+        margin-bottom: 30px
+
+
+  .service-item.individual
+    margin-bottom: 70px
+    .service-item-content
+      padding: 40px 20px
+
+  .service-item.entity
+    .service-item-content
+      padding: 40px 20px
+
+  .chars-block
+    position: relative
+    left: 0
+    top: 0
+    width: 100%
+    margin-bottom: 50px
+
   .intro-slide
     h1
       font-size: 32px
@@ -143,6 +290,42 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .chars-block
+    flex-direction: column
+
+  .char-item
+    width: 100%
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    .svg
+      height: 70px
+      margin-bottom: 10px
+
+  .service-item
+    h2
+      font-size: 24px
+      text-align: center!important
+      padding: 0!important
+      margin-bottom: 15px
+      line-height: 1.2
+    &-content
+      flex-direction: column
+      padding-top: 20px!important
+      padding-bottom: 20px!important
+    &-mobimg
+      width: 100%
+      margin-bottom: 30px
+    &-desc
+      width: 100%
+    .btn-wrap
+      text-align: center
+
+  .service-item.entity
+    .service-item-content
+      flex-direction: column-reverse
+
 
   #intro-nums
     font-size: 14px
@@ -212,6 +395,10 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .service-item
+    h2
+      font-size: 20px
 
   .intro-slide
     h1
