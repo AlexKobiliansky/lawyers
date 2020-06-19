@@ -13,14 +13,14 @@
   color: #666
 
 ::selection
-  background-color: $accent
+  background-color: $accent-dark
   color: #fff
 
 body
-  font-size: 16px
+  font-size: 18px
   min-width: 320px
   position: relative
-  line-height: 1.5
+  line-height: 1.55
   font-family: $default-font
   overflow-x: hidden
   color: $text
@@ -48,7 +48,7 @@ a:hover, a:active, a:focus
   text-decoration: none
 
 a
-  color: $accent
+  color: $accent-dark
   text-decoration: none
 
 a, li, button
@@ -61,13 +61,16 @@ ul
 
 .hidden
   display: none!important
-
-//pixel-glass custom
-//html
-//  background-repeat: no-repeat
-//  background-position: 50% 0
-//  background-image: url('../img/layout/test.png')
-
 // ======= END TEMPLATE STYLES =======
 
+.large-container
+  max-width: 1760px
+  position: relative
+  display: block
+  margin: 0 auto
 
+.small-container
+  max-width: 1590px
+  position: relative
+  display: block
+  margin: 0 auto
