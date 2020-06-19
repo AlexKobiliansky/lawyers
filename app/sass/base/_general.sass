@@ -50,6 +50,7 @@ a:hover, a:active, a:focus
 a
   color: $accent-dark
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -64,13 +65,21 @@ ul
 // ======= END TEMPLATE STYLES =======
 
 .large-container
-  max-width: 1760px
+  max-width: 1790px
+  padding: 0 15px
   position: relative
   display: block
   margin: 0 auto
 
 .small-container
-  max-width: 1590px
+  max-width: 1620px
+  padding: 0 15px
   position: relative
   display: block
   margin: 0 auto
+
+.s-dark
+  background-color: $accent-dark
+  color: #fff
+  a
+    color: #fff

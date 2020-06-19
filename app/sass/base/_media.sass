@@ -2,6 +2,39 @@
 
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1700px)
+  .main-mnu
+    li
+      margin-right: 30px
+
+@media (max-width: 1500px)
+  .main-mnu
+    a
+      font-size: 16px
+
+  .top-phones
+    a
+      font-size: 20px
+
+  .top-line
+    padding: 30px 0
+
+@media (max-width: 1400px)
+  .main-mnu
+    a
+      font-size: 14px
+
+  .top-phones
+    a
+      font-size: 18px
+
+@media (max-width: 1300px)
+  .main-mnu
+    display: none
+
+  .hamburger
+    display: block
+
 
 // ≥1200px
 +media-breakpoint-down(lg)
@@ -14,6 +47,53 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+    font-size: 16px
+
+
+  .logo
+    max-width: 80px
+
+  .top-line
+    padding: 15px 0
+
+  .soc-item
+    .svg
+      width: 24px
+
+  .top-phones
+    padding-left: 30px
+    &:before
+      width: 20px
+      height: 20px
+      top: calc(50% - 10px)
+    a
+      font-size: 16px
+      margin-bottom: 5px
+
+@media (max-width: 390px)
+  .top-line
+    flex-wrap: wrap
+
+  .logo
+    max-width: 100px
+
+  .top-phones
+    order: 4
+    margin-left: auto
+    margin-right: auto
+    margin-top: 15px
+    padding: 0 30px 0 60px
+    &:before
+      left: 30px
+
+  .hamburger
+    top: 2px
+
+  .soc-item
+    margin-right: 20px
+    margin-left: auto
 
 
 /*==========  Mobile First  ==========*/
