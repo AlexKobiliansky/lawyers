@@ -35,6 +35,20 @@
 
 @media (max-width: 1500px)
 
+  .s-prices
+    .section-title
+      font-size: 32px
+
+  .prices-left
+    width: 410px
+
+  .prices-right
+    width: calc(100% - 450px)
+
+  .prices-desc
+    padding-right: 40px
+
+
   .about-desc
     font-size: 16px
 
@@ -175,6 +189,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .price-items-wrap
+    grid-template-columns: repeat(2, 1fr)
+
   .about-img
     display: none
 
@@ -238,6 +255,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .prices-wrap
+    flex-direction: column
+
+  .prices-left
+    width: 100%
+    margin-bottom: 40px
+
+  .prices-right
+    width: 100%
 
   .section-title
     font-size: 32px
@@ -324,6 +351,27 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-prices
+    padding-bottom: 40px
+    .section-title
+      font-size: 24px
+
+  .prices-desc
+    padding-right: 0
+
+  .price-item
+    padding: 20px
+    outline-width: 1px
+    outline-offset: -9px
+    font-size: 16px
+    line-height: 1.3
+    min-height: 180px
+    &-price
+      font-size: 18px
+
+  .price-items-wrap
+    grid-gap: 10px
 
   .section-title
     font-size: 24px
@@ -435,6 +483,21 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .prices-desc
+    font-size: 16px
+
+  .price-items-wrap
+    display: block
+
+  .price-item
+    font-size: 18px
+    line-height: 1.5
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+    &-price
+      font-size: 22px
 
   .s-about
     background-position: left 130% top

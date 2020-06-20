@@ -1,0 +1,42 @@
+.s-prices
+  padding: 60px 0 100px
+
+.prices-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.prices-left
+  width: 510px
+
+.prices-desc
+  font-weight: 300
+  padding-right: 135px
+
+
+.prices-right
+  width: calc(100% - 560px)
+
+.price-items-wrap
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 20px
+
+.price-item
+  background-image: url('../img/bg-chars.jpg')
+  +bg-cover
+  box-shadow: 0 0 20px 5px rgba(#000, .1)
+  min-height: 212px
+  padding: 35px
+  outline: 2px solid #bebebe
+  outline-offset: -15px
+  font-weight: 700
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  &-title
+    margin-bottom: 20px
+  &-price
+    font-size: 24px
+    line-height: 1.2
