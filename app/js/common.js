@@ -108,6 +108,34 @@ $(document).ready(function(){
         $('#intro-current').text(romanize(currentItem));
     });
 
+
+    $(".reviews-img-slider").slick({
+        slidesToShow: 3,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: 100,
+        arrows: false,
+        edgeFriction: 0,
+        asNavFor: '.reviews-content-slider',
+        draggable: false,
+    });
+
+
+    $(".reviews-content-slider").slick({
+        slidesToShow: 1,
+        arrows: true,
+        draggable: false,
+        fade: true,
+        asNavFor: '.reviews-img-slider',
+        adaptiveHeight: true
+    });
+
+    $('.slick-current').find('.review-content-num').text(romanize(1))
+
+    $('.reviews-content-slider').on('afterChange', function(event, slick, currentSlide){
+        $('.slick-current').find('.review-content-num').text(romanize(currentSlide+1))
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -137,5 +165,4 @@ $(document).ready(function(){
         return Array(+digits.join("") + 1).join("M") + roman;
     }
 
-    console.log(romanize(6))
 });

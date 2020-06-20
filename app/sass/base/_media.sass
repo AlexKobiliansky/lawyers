@@ -189,6 +189,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .reviews-content-slider
+    width: 900px
+
   .price-items-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -255,6 +258,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .reviews-content-slider
+    width: 600px
+
+  .reviews-img-slider
+    width: 500px
 
   .prices-wrap
     flex-direction: column
@@ -351,6 +360,38 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-reviews
+    padding-top: 40px
+    padding-bottom: 40px
+
+  .review-content
+    &-desc
+      padding: 0
+      font-size: 14px
+      margin-bottom: 20px
+    &-name
+      font-size: 18px
+    &-num
+      font-size: 24px
+
+  .reviews-content-slider
+    width: 100%
+    .slick-arrow
+      display: none!important
+
+  .reviews-img-slider
+    width: 100%
+
+  .review-img-wrapper
+    width: 80px
+    height: 80px
+    border-width: 1px
+    padding: 3px
+
+  .review-img.slick-current .review-img-wrapper
+    width: 100px
+    height: 100px
 
   .s-prices
     padding-bottom: 40px
