@@ -14,6 +14,15 @@
 
 @media (max-width: 1700px)
 
+
+  .about-content
+    padding-left: 600px
+    padding-right: 150px
+
+  .about-img
+    left: -150px
+    top: -10px
+
   .intro-slide
     padding-left: 50px
 
@@ -25,6 +34,9 @@
       margin-right: 30px
 
 @media (max-width: 1500px)
+
+  .about-desc
+    font-size: 16px
 
   .large-container
     .small-container
@@ -45,6 +57,9 @@
     padding: 30px 0
 
 @media (max-width: 1400px)
+
+  .about-content
+    padding-left: 550px
 
   .service-item
     width: 1200px
@@ -114,6 +129,12 @@
 
 @media (max-width: 1300px)
 
+  .about-img
+    left: -250px
+
+  .about-content
+    padding-left: 450px
+
   .service-item
     width: 1000px
     &-num
@@ -153,6 +174,12 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .about-img
+    display: none
+
+  .about-content
+    padding-left: 50px
 
   .s-services
     padding-bottom: 60px
@@ -212,6 +239,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .section-title
+    font-size: 32px
+
   .s-services
     padding-top: 70px
 
@@ -268,6 +298,10 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .about-content
+    padding-left: 30px
+
   .intro-img
     display: none
 
@@ -290,6 +324,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .section-title
+    font-size: 24px
+
+  .about-content
+    padding-right: 30px
 
   .chars-block
     flex-direction: column
@@ -395,6 +435,22 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .s-about
+    background-position: left 130% top
+
+  .about-content
+    padding-left: 15px
+    padding-right: 15px
+    font-size: 14px
+
+  .about-link
+    font-size: 16px
+    &:after
+      width: 16px
+      height: 16px
+      right: -24px
+      top: calc(50% - 8px)
 
   .service-item
     h2

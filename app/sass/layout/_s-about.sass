@@ -1,0 +1,38 @@
+.s-about
+  padding: 50px 0 45px
+  background-image: url('../img/bg-about.png')
+  background-repeat: repeat-y
+  background-position: top right
+  position: relative
+  overflow: hidden
+.about-img
+  position: absolute
+  left: 0
+  top: -20px
+
+
+.about-content
+  border: 2px solid $accent-darkyellow
+  padding-top: 15px
+  padding-right: 195px
+  padding-bottom: 35px
+  padding-left: 705px
+
+.about-desc
+  margin-bottom: 30px
+
+.about-link
+  display: inline-block
+  line-height: 1
+  text-decoration: underline
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background-image: url('../img/icons/slide-arrow-white.svg')
+    +bg-cover
+    right: -33px
+    top: calc(50% - 10px)
+    transform: rotate(180deg)
