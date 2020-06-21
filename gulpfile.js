@@ -42,6 +42,9 @@ gulp.task('scripts', function() {
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/owl-carousel/owl.carousel.min.js',
 		'app/libs/slick/slick.min.js',
+		'app/libs/jquery-form-validator/form-validator/jquery.form-validator.min.js',
+		'app/libs/formstyler/jquery.formstyler.min.js',
+		'app/libs/inputmask/jquery.maskedinput.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -72,6 +72,12 @@
 
 @media (max-width: 1400px)
 
+  .contacts-square
+    bottom: -90px
+    right: 0
+    width: 300px
+
+
   .about-content
     padding-left: 550px
 
@@ -189,6 +195,20 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-contacts
+    padding-top: 50px
+
+  .contacts-square
+    display: none
+
+  .contacts-block
+    width: 50%
+    padding: 0 50px 15px
+
+  .contact-form
+    width: 50%
+    padding: 0 50px 15px
+
   .reviews-content-slider
     width: 900px
 
@@ -258,6 +278,39 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  #map
+    height: 400px
+
+  form
+    h3
+      font-size: 24px
+      margin-bottom: 15px
+
+  .insta-item
+    margin-top: 0
+
+  .s-contacts
+    .section-title
+      text-align: center
+
+  .contact-form
+    width: 50%
+    padding: 0
+    margin: 0 auto
+    .form-labels-wrap
+      padding-right: 0
+
+  .contacts-wrap
+    display: block
+
+  .contacts-block
+    border-right: none
+    width: 50%
+    margin: 0 auto 40px
+    padding: 0
+    &:after
+      display: none
 
   .reviews-content-slider
     width: 600px
@@ -335,6 +388,25 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .contacts-block
+    width: 100%
+
+  .contact-form
+    width: 100%
+    .form-labels-wrap
+      margin-bottom: 0
+
+  .btn-wrap
+    text-align: center
+
+  .label-checkbox
+    justify-content: center
+    margin-bottom: 21px
+    span
+      max-width: calc(100% - 38px)
+      width: auto
+
+
   .about-content
     padding-left: 30px
 
@@ -360,6 +432,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  #map
+    height: 350px
+
+  .contacts-wrap
+    margin-top: 30px
 
   .s-reviews
     padding-top: 40px
@@ -524,6 +602,10 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .contact-form
+    h3
+      font-size: 20px
 
   .prices-desc
     font-size: 16px

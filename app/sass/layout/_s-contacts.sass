@@ -1,0 +1,114 @@
+.s-contacts
+  padding: 90px 0 40px
+
+.contacts-wrap
+  display: flex
+  align-items: flex-start
+  margin-top: 60px
+
+.contacts-block
+  width: 622px
+  padding: 0 120px 15px
+  position: relative
+  border-right: 2px solid #bebebe
+  &:after
+    content: ''
+    position: absolute
+    width: 22px
+    height: 82px
+    background-image: url('../img/icons/decor-leave-2.jpg')
+    right: -11px
+    top: 90px
+
+.con-item
+  margin-bottom: 22px
+  &-title
+    font-size: 14px
+    font-weight: 900
+    color: rgba($text, .5)
+    margin-bottom: 8px
+  a
+    &:hover
+      text-decoration: underline
+
+.insta-item
+  margin-top: 70px
+  .con-item-title
+    margin-bottom: 14px
+  .svg
+    fill: #acacac
+  .soc-item
+    &:hover
+      fill: darken($accent-yellow, 20%)
+
+
+form
+  width: 500px
+  padding: 0 55px
+  position: relative
+  h3
+    font-size: 30px
+    font-weight: 900
+    margin-bottom: 30px
+  label
+    display: block
+    margin-bottom: 21px
+  input
+    width: 100%
+    line-height: 1
+    border: 2px solid #bebebe
+    border-radius: 3px
+    padding: 13px 15px 11px
+    background-color: transparent
+    color: $text
+    &::placeholder
+      color: rgba($text, .5)
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .form-labels-wrap
+    margin-bottom: 50px
+    padding-right: 30px
+  .help-block
+    display: none
+
+
+.label-checkbox
+  margin-bottom: 40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  span
+    width: calc(100% - 38px)
+    font-size: 14px
+    display: inline-block
+    line-height: 1
+
+.jq-checkbox
+  margin-right: 15px
+  width: 23px
+  height: 23px
+  border: 2px solid #bebebe!important
+  background: transparent
+  box-shadow: none
+
+.jq-checkbox.checked .jq-checkbox__div
+  width: 16px
+  height: 8px
+  margin: 3px 0 0 1px
+  border-color: rgba($text, .5)
+
+.contacts-square
+  position: absolute
+  width: 456px
+  height: 170px
+  background-image: url('../img/bg-chars.jpg')
+  filter: brightness(.9)
+  right: -25px
+  bottom: -40px
+
+#map
+  background-color: #ccc
+  height: 500px
