@@ -13,6 +13,11 @@
 
 
 @media (max-width: 1700px)
+
+  .servdesc-items-prices
+    padding-left: 30px
+    padding-right: 30px
+
   .first-content
     padding-left: 15px
 
@@ -36,6 +41,10 @@
 
 @media (max-width: 1600px)
 
+  .s-first.s-first-services
+    .page-title
+      font-size: 68px
+
   .review-items-wrap
     grid-column-gap: 80px
 
@@ -55,6 +64,33 @@
       height: 900px
 
 @media (max-width: 1500px)
+
+  .s-servdesc
+    &:before
+      left: 25%
+
+  .servdesc-wrap
+    margin-top: -290px
+
+  .servdesc-items-prices
+    top: -360px
+
+  .servdesc-price
+    padding: 30px 30px 40px
+    min-height: 220px
+    &-title
+      font-size: 16px
+    &-price
+      font-size: 20px
+
+  .s-first.s-first-services
+    padding-bottom: 225px
+    .page-title
+      width: 60%
+
+  .first-img
+    right: 50px
+    width: 600px
 
   .s-prices
     .section-title
@@ -188,6 +224,27 @@
 
 @media (max-width: 1300px)
 
+  .servdesc-items-prices
+    grid-gap: 20px
+    grid-template-columns: repeat(3, 1fr)
+    top: -260px
+
+  .servdesc-wrap
+    margin-top: -190px
+
+  .s-first.s-first-services
+    padding-bottom: 100px
+    .page-title
+      font-size: 46px
+      span
+        font-size: 24px
+    .first-content
+      padding-bottom: 200px
+
+  .first-img
+    width: 400px
+    right: 50px
+
   .s-reviews-form
     padding: 50px 0
 
@@ -252,6 +309,31 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .servdesc-right
+    font-size: 16px
+    margin-left: 30px
+
+  .servdesc-items-prices
+    grid-template-columns: repeat(2, 1fr)
+
+  .servdesc-link
+    font-size: 13px
+    padding-right: 26px
+    &:after
+      width: 16px
+      height: 16px
+      top: calc(50% - 8px)
+
+  .first-img
+    display: none
+
+  .s-first.s-first-services
+    .page-title
+      width: 100%
+    .first-content
+      padding-bottom: 240px
+
 
   .breadcrumbs
     padding-bottom: 70px
@@ -373,6 +455,24 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-servdesc
+    padding-bottom: 50px
+    &:before
+      height: 30%
+      width: 40%
+      left: 20%
+
+  .servdesc-left
+    display: none
+
+  .servdesc-right
+    width: 100%
+    margin-left: 0
+    img
+      width: 300px
+      margin: 0 30px 30px 0
+      float: left
 
   .reviews-form
     label
@@ -587,6 +687,43 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  #popup-form
+    h2
+      font-size: 24px
+    .form-labels-wrap
+      padding: 0
+    .form-desc
+      font-size: 16px
+
+  .servdesc-wrap
+    margin-top: -215px
+
+  .s-servdesc
+    &:before
+      display: none
+
+  .servdesc-right
+    h3
+      font-size: 22px
+      margin-bottom: 15px
+    img
+      width: 100%
+      margin-right: 0
+
+  .servdesc-items-prices
+    display: block
+
+  .servdesc-price
+    margin-bottom: 20px
+
+  .s-first.s-first-services
+    .page-title
+      font-size: 28px
+      span
+        font-size: 16px
+    .breadcrumbs
+      padding-bottom: 30px
 
   .review-item
     &-top
@@ -805,6 +942,29 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  #popup-form
+    padding-left: 20px
+    padding-right: 20px
+
+  .s-first.s-first-services
+    .page-title
+      font-size: 24px
+      line-height: 1.5
+      span
+        display: block
+    .first-content
+      padding-bottom: 210px
+
+  .servdesc-items-prices
+    padding-left: 10px
+    padding-right: 10px
+
+  .servdesc-price
+    padding: 20px 20px 30px
+    outline-width: 1px
+    outline-offset: -9px
+    min-height: 200px
 
   .review-item
     &-img

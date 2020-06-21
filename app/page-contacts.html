@@ -207,12 +207,46 @@
 			</div>
 		</div>
 	</footer>
+	<div class="dev-block">
+		Разработка сайта <a href="https://grampus-studio.ru/" target="_blank"><img src="img/dev-logo.svg" alt="alt" class="svg"></a>
+	</div>
 	<!-- ======= FOOTER END ======= -->
 
 </div>
 
 
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Юристы">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Юристы">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Форма" value="Запрос консультации">
+		<input type="hidden" name="Услуга" value="" id="consult">
+
+
+		<h2>Оставьте заявку</h2>
+		<div class="form-desc">И мы свяжемся с Вами в ближайшее время</div>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Номер телефона"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+		</div>
+		<button type="submit" class="btn btn-bg">Отправить заявку</button>
+	</form>
+</div>
+
 <script src="js/scripts.min.js"></script>
 
 </body>
 </html>
+

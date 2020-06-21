@@ -1,0 +1,87 @@
+.s-servdesc
+  position: relative
+  background-color: #f7f7f7
+  padding-bottom: 125px
+  &:before
+    width: 455px
+    height: 597px
+    content: ''
+    position: absolute
+    background-image: url('../img/bg-chars.jpg')
+    +bg-cover
+    filter: brightness(.9)
+    bottom: 40px
+    left: 35%
+
+
+.servdesc-items-prices
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 25px
+  position: relative
+  top: -437px
+
+.servdesc-price
+  background-image: url('../img/bg-chars.jpg')
+  +bg-cover
+  box-shadow: 0 0 20px 5px rgba(#000, .1)
+  min-height: 260px
+  padding: 35px 35px 50px
+  outline: 2px solid #bebebe
+  outline-offset: -15px
+  font-weight: 700
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  &-title
+    font-size: 18px
+    text-transform: uppercase
+    margin-bottom: 12px
+  &-price
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 20px
+
+.servdesc-link
+  font-size: 16px
+  font-weight: 500
+  line-height: 1
+  color: $text
+  display: inline-block
+  position: relative
+  padding-right: 40px
+  &:after
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background-image: url('../img/icons/slide-arrow.svg')
+    +bg-cover
+    right: 0
+    top: calc(50% - 10px)
+    transform: rotate(180deg)
+    +mt(.3s)
+  &:hover
+    text-decoration: underline
+    &:after
+      right: -5px
+
+.servdesc-wrap
+  margin-top: -330px
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  position: relative
+
+.servdesc-left
+  width: 850px
+
+.servdesc-right
+  width: 680px
+  margin-left: 50px
+  h3
+    font-size: 24px
+    margin-bottom: 30px
+  p
+    margin-bottom: 20px

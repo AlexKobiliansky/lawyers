@@ -154,6 +154,27 @@ $(document).ready(function(){
 
     $('input[type="checkbox"], select').styler();
 
+    $(function() {
+        $("a[href='#popup-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
+
+    $(".servdesc-link").on('click', function(){
+        var th = $(this);
+        var serv = th.data('service');
+
+        $('#consult').val(serv);
+    })
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
