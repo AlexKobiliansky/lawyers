@@ -26,7 +26,7 @@ $(document).ready(function(){
         },
     });
 
-    var mmenuBtn = $("#mmenu-btn");
+    var mmenuBtn = $(".mmenu-btn");
     var API = $mmenu.data("mmenu");
 
     mmenuBtn.click(function() {
@@ -244,5 +244,9 @@ $(document).ready(function(){
             });
         }, 2000);
     }
+
+    $('#totop').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
 
 });

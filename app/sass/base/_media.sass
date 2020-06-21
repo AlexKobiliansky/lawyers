@@ -195,6 +195,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  #totop
+    order: 3
+    margin-top: 25px
+
+  .main-foot
+    .hamburger
+      order: 4
+
   .s-contacts
     padding-top: 50px
 
@@ -433,6 +441,16 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .main-foot
+    .top-line
+      flex-wrap: wrap
+
+  #totop
+    order: 5
+    width: 100%
+    text-align: center
+    margin-top: 40px
+
   #map
     height: 350px
 
@@ -602,6 +620,12 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .main-foot
+    .top-line
+      padding: 30px 0 20px
+    .hamburger
+      order: 2
 
   .contact-form
     h3
