@@ -139,7 +139,7 @@ $(document).ready(function(){
     $('.preloader').fadeOut();
 
     $.validate({
-        form : '.contact-form',
+        form : 'form',
         scrollToTopOnError: false
     });
 

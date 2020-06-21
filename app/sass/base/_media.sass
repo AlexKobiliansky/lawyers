@@ -13,7 +13,8 @@
 
 
 @media (max-width: 1700px)
-
+  .first-content
+    padding-left: 15px
 
   .about-content
     padding-left: 600px
@@ -34,6 +35,20 @@
       margin-right: 30px
 
 @media (max-width: 1600px)
+
+  .review-items-wrap
+    grid-column-gap: 80px
+
+  .review-item
+    &-img
+      width: 120px
+      height: 120px
+    &-content
+      width: calc(100% - 140px)
+
+  .reviews-form-img
+    right: 5%
+
   .p-contacts-form
     #map
       width: 850px
@@ -85,7 +100,16 @@
 
 @media (max-width: 1400px)
 
+  .review-item
+    &-date
+      font-size: 16px
+    &-name
+      font-size: 20px
+    &-desc
+      font-size: 16px
 
+  .reviews-form-img
+    right: 30px
 
   .contacts-square
     bottom: -90px
@@ -164,6 +188,12 @@
 
 @media (max-width: 1300px)
 
+  .s-reviews-form
+    padding: 50px 0
+
+  .reviews-form-img
+    width: 600px
+
   .s-first .contacts-block
     padding-bottom: 40px
 
@@ -222,6 +252,27 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .breadcrumbs
+    padding-bottom: 70px
+
+  .page-title
+    margin-bottom: 70px
+
+  .first-content
+    &:after
+      top: 135px
+
+  .review-items-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .review-item
+    &:nth-child(3)
+      display: none
+
+  .reviews-form-img
+    width: 550px
+    bottom: 0
 
   .s-first
     .contacts-block
@@ -322,6 +373,25 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .reviews-form
+    label
+      margin-bottom: 20px
+    .form-labels-wrap
+      margin-bottom: 20px
+    input
+      width: 100%
+      max-width: 100%
+    textarea
+      height: 140px
+
+  .reviews-form-img
+    width: 430px
+    right: 15px
+
+  .first-content
+    &:after
+      top: 85px
 
   .page-title
     font-size: 56px
@@ -458,6 +528,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .review-items-wrap
+    display: block
+
+  .review-item
+    &:nth-child(3)
+      display: block
+
+  .reviews-form
+    width: 100%
+    .form-labels-wrap
+      padding-right: 0
+
+  .reviews-form-img
+    display: none
+
   .contacts-block
     width: 100%
 
@@ -502,6 +587,35 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .review-item
+    &-top
+      flex-direction: column
+      text-align: center
+      margin-bottom: 15px
+    &-content
+      width: 100%
+    &-img
+      margin-bottom: 15px
+
+  .review-link-wrap
+    font-size: 16px
+
+  .s-reviews-form
+    padding: 40px 0
+    .section-title
+      text-align: center
+
+  .s-first
+    padding-bottom: 40px
+
+  .first-content
+    padding-left: 5px
+    &:after
+      height: 60px
+      width: 16px
+      top: 60px
+      left: -9px
 
   .breadcrumbs
     padding-bottom: 30px
@@ -691,6 +805,17 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .review-item
+    &-img
+      width: 100px
+      height: 100px
+    &-date
+      font-size: 14px
+    &-name
+      font-size: 18px
+    &-desc
+      font-size: 14px
 
   .contacts-block
     font-size: 16px

@@ -12,3 +12,13 @@
 
 .first-content
   border: 2px solid $accent-darkyellow
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 22px
+    height: 82px
+    background-image: url('../img/icons/decor-leave-1.jpg')
+    +bg-cover
+    left: -13px
+    top: 172px
