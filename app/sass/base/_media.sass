@@ -33,6 +33,12 @@
     li
       margin-right: 30px
 
+@media (max-width: 1600px)
+  .p-contacts-form
+    #map
+      width: 850px
+      height: 900px
+
 @media (max-width: 1500px)
 
   .s-prices
@@ -56,6 +62,13 @@
     .small-container
       padding: 0
 
+  .s-first
+    .large-container
+      .small-container
+        padding-left: 15px
+        padding-right: 15px
+
+
   #intro-nums
     left: 70px
 
@@ -71,6 +84,8 @@
     padding: 30px 0
 
 @media (max-width: 1400px)
+
+
 
   .contacts-square
     bottom: -90px
@@ -149,6 +164,19 @@
 
 @media (max-width: 1300px)
 
+  .s-first .contacts-block
+    padding-bottom: 40px
+
+  .p-contacts-form
+    padding-bottom: 50px
+    #map
+      width: 550px
+      height: 600px
+
+  .contacts-img
+    bottom: -50px
+    width: 630px
+
   .about-img
     left: -250px
 
@@ -194,6 +222,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-first
+    .contacts-block
+      margin: 0
+
+  .p-contacts-form
+    .contact-form
+      margin: 0
 
   #totop
     order: 3
@@ -286,6 +322,32 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .page-title
+    font-size: 56px
+    margin-bottom: 50px
+
+  .s-first
+    .contacts-block
+      width: 100%
+
+
+
+  .breadcrumbs
+    padding: 30px 0 50px
+
+  .contacts-img
+    display: none
+
+  .p-contacts-form
+    padding: 40px 0 0
+    .contact-form
+      margin-bottom: 40px
+    #map
+      position: relative
+      width: 100%
+      bottom: 0
+      height: 400px
 
   #map
     height: 400px
@@ -440,6 +502,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .breadcrumbs
+    padding-bottom: 30px
+
+  .page-title
+    font-size: 28px
+    margin-bottom: 35px
+
+
 
   .main-foot
     .top-line
@@ -620,6 +691,9 @@
       margin-bottom: 5px
 
 @media (max-width: 390px)
+
+  .contacts-block
+    font-size: 16px
 
   .main-foot
     .top-line
